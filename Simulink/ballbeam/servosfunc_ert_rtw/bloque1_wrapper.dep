@@ -1,0 +1,79 @@
+bloque1_wrapper.o: ../bloque1_wrapper.c \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_compcond.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_types.h \
+ C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_types_def.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_matlogging.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sysran_types.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_sample_time_defs.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/solver_zc.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/slexec_block_runtime_service.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_def.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_common_types_def.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_fixpt.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_datatype_access.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_report_types.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_debug.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_internal.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_prodhwdevicetype.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simulink_solver_api.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_compcond.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_types.h:
+
+C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_types_def.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_matlogging.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sysran_types.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_sample_time_defs.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/solver_zc.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/slexec_block_runtime_service.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_def.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_common_types_def.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_fixpt.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_datatype_access.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_report_types.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_debug.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_internal.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_prodhwdevicetype.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simulink_solver_api.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h:

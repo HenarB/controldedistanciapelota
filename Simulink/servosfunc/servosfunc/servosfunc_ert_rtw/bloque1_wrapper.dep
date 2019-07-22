@@ -1,0 +1,13 @@
+bloque1_wrapper.o: ../bloque1_wrapper.c \
+ C:/Users/henar/Desktop/servosfunc/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h
+
+C:/Users/henar/Desktop/servosfunc/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h:
