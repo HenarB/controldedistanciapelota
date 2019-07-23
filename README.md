@@ -10,7 +10,10 @@ This files are intended to be used for educational purpuse.
 * Drawings
 
 The goal of this project is to stabilize a ball on a beam at the desired distance 
-by implementing a discrete PID controller to the system.
+by implementing a discrete PID controller to the system. This will be tested with
+two models:
+*Model with a custom S-function builder block
+*Model with predefined blocks
 
 Arduino code is implemented in a Simulink model by using a custom s-function builder block. 
  
