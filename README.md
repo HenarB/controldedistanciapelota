@@ -1,6 +1,6 @@
     ##-- Ball & Beam control using Simulink-Arduino --##
 
-This files are intended to be used for educational purpuse
+This files are intended to be used for educational purpuse.
 
 * Arduino code for the IR distance sensor
 * Simulink blocks for modeling:
@@ -10,17 +10,19 @@ This files are intended to be used for educational purpuse
 * Drawings
 
 The goal of this project is to stabilize a ball on a beam at the desired distance 
-with a PID controller.
+by implementing a discrete PID controller to the system.
+
 Arduino code is implemented in a Simulink model by using a custom s-function builder block. 
  
         ##-- Requirements --##
-To run this, you'll need:
+To run this model, you'll need:
 * Arduino, v. 1.8.5 or higher
 * MATLAB v. 2018a or higher, the Arduino toolbox add-on needs to be installed
 * 3D printer
 
         ##-- Credits --##
 * Project author: Henar Brenlla
+* EIB (UPV/EHU)
 
         ##-- Renders --##
 
