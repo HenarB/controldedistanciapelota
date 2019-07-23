@@ -1,0 +1,62 @@
+servohenar.o: servohenar.c servohenar.h rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h \
+ C:/Users/henar/Desktop/servoBloques/servohenar_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_AnalogIn.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_SVD.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/blocks/sfcn/include/arduino_servowrite_lct.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/include/io_wrappers.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/blocks/sfcn/include/arduino_blocks_abstraction.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h \
+ servohenar_types.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_SVD.h \
+ MW_target_hardware_resources.h \
+ C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h \
+ rtGetNaN.h rt_nonfinite.h rtGetInf.h servohenar_private.h
+
+servohenar.h:
+
+rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h:
+
+C:/Users/henar/Desktop/servoBloques/servohenar_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_AnalogIn.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_SVD.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/blocks/sfcn/include/arduino_servowrite_lct.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/include/io_wrappers.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinobase/blocks/sfcn/include/arduino_blocks_abstraction.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/Arduino.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/cores/arduino/binary.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/3P.instrset/arduinoide.instrset/arduino-1.8.1/hardware/arduino/avr/variants/mega/pins_arduino.h:
+
+servohenar_types.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/shared/svd/include/MW_SVD.h:
+
+MW_target_hardware_resources.h:
+
+C:/ProgramData/MATLAB/SupportPackages/R2018a/toolbox/target/supportpackages/arduinotarget/scheduler/include/arduinoAVRScheduler.h:
+
+rtGetNaN.h:
+
+rt_nonfinite.h:
+
+rtGetInf.h:
+
+servohenar_private.h:
