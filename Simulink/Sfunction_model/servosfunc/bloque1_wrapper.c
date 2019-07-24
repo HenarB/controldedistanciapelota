@@ -85,11 +85,8 @@ if (xD[0] == 1){
                + 120.72;
       
       //Limitador de distancia
-      if (dist > 45){
-        dist = 45;
-      }
-      else if (dist < 5){
-        dist = 5;
+      if (dist < 7){
+        dist = 7;
       }
       dist1[0] = dist;
     

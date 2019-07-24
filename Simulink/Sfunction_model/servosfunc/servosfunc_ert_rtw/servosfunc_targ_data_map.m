@@ -70,55 +70,71 @@
       paramMap.sections(2) = section;
       clear section
       
-      section.nData     = 9;
-      section.data(9)  = dumData; %prealloc
+      section.nData     = 12;
+      section.data(12)  = dumData; %prealloc
       
 	  ;% servosfunc_P.Constant_Value
 	  section.data(1).logicalSrcIdx = 7;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% servosfunc_P.TSamp_WtEt
+	  ;% servosfunc_P.ngulodeseado_Gain
 	  section.data(2).logicalSrcIdx = 8;
 	  section.data(2).dtTransOffset = 1;
 	
-	  ;% servosfunc_P.Consigna_Value
+	  ;% servosfunc_P.Constant_Value_p
 	  section.data(3).logicalSrcIdx = 9;
 	  section.data(3).dtTransOffset = 2;
 	
-	  ;% servosfunc_P.FilterDifferentiatorTF_NumCoef
+	  ;% servosfunc_P.TSamp_WtEt
 	  section.data(4).logicalSrcIdx = 10;
 	  section.data(4).dtTransOffset = 3;
 	
-	  ;% servosfunc_P.FilterDifferentiatorTF_InitialS
+	  ;% servosfunc_P.Consigna_Value
 	  section.data(5).logicalSrcIdx = 11;
-	  section.data(5).dtTransOffset = 5;
+	  section.data(5).dtTransOffset = 4;
 	
-	  ;% servosfunc_P.Constant_Value_j
+	  ;% servosfunc_P.FilterDifferentiatorTF_NumCoef
 	  section.data(6).logicalSrcIdx = 12;
-	  section.data(6).dtTransOffset = 6;
+	  section.data(6).dtTransOffset = 5;
 	
-	  ;% servosfunc_P.ZeroGain_Gain
+	  ;% servosfunc_P.FilterDifferentiatorTF_InitialS
 	  section.data(7).logicalSrcIdx = 13;
 	  section.data(7).dtTransOffset = 7;
 	
-	  ;% servosfunc_P.Integrator_gainval
+	  ;% servosfunc_P.Constant_Value_j
 	  section.data(8).logicalSrcIdx = 14;
 	  section.data(8).dtTransOffset = 8;
 	
-	  ;% servosfunc_P.Integrator_IC
+	  ;% servosfunc_P.ZeroGain_Gain
 	  section.data(9).logicalSrcIdx = 15;
 	  section.data(9).dtTransOffset = 9;
+	
+	  ;% servosfunc_P.Integrator_gainval
+	  section.data(10).logicalSrcIdx = 16;
+	  section.data(10).dtTransOffset = 10;
+	
+	  ;% servosfunc_P.Integrator_IC
+	  section.data(11).logicalSrcIdx = 17;
+	  section.data(11).dtTransOffset = 11;
+	
+	  ;% servosfunc_P.Constant1_Value
+	  section.data(12).logicalSrcIdx = 18;
+	  section.data(12).dtTransOffset = 12;
 	
       nTotData = nTotData + section.nData;
       paramMap.sections(3) = section;
       clear section
       
-      section.nData     = 1;
-      section.data(1)  = dumData; %prealloc
+      section.nData     = 2;
+      section.data(2)  = dumData; %prealloc
       
-	  ;% servosfunc_P.ServoWrite_p1
-	  section.data(1).logicalSrcIdx = 16;
+	  ;% servosfunc_P.ManualSwitch_CurrentSetting
+	  section.data(1).logicalSrcIdx = 19;
 	  section.data(1).dtTransOffset = 0;
+	
+	  ;% servosfunc_P.ServoWrite_p1
+	  section.data(2).logicalSrcIdx = 20;
+	  section.data(2).dtTransOffset = 1;
 	
       nTotData = nTotData + section.nData;
       paramMap.sections(4) = section;
@@ -172,7 +188,7 @@
 	  section.data(1).logicalSrcIdx = 1;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% servosfunc_B.Saturate
+	  ;% servosfunc_B.ModoAutomtico
 	  section.data(2).logicalSrcIdx = 3;
 	  section.data(2).dtTransOffset = 1;
 	
@@ -266,8 +282,8 @@
   ;%
 
 
-  targMap.checksum0 = 2658660098;
-  targMap.checksum1 = 3532373421;
-  targMap.checksum2 = 4243844575;
-  targMap.checksum3 = 2921759306;
+  targMap.checksum0 = 3425433701;
+  targMap.checksum1 = 1839177682;
+  targMap.checksum2 = 3702524634;
+  targMap.checksum3 = 1386009927;
 

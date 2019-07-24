@@ -2,7 +2,7 @@
 ## Makefile generated for Simulink model 'servosfunc'. 
 ## 
 ## Makefile     : servosfunc.mk
-## Generated on : Tue Jul 23 17:53:17 2019
+## Generated on : Wed Jul 24 14:04:41 2019
 ## MATLAB Coder version: 4.0 (R2018a)
 ## 
 ## Build Info:
@@ -29,7 +29,7 @@ MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2018a
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2018a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
 MASTER_ANCHOR_DIR         = 
-START_DIR                 = D:/Descargas/simulink/SFUNC/servosfunc
+START_DIR                 = C:/Users/henar/Desktop/servosfunc
 ARCH                      = win64
 SOLVER                    = 
 SOLVER_OBJ                = 
@@ -452,22 +452,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(MAIN_OBJ)
 
 
 %.o : $(RELATIVE_PATH_TO_ANCHOR)/%.cpp
-	$(CPP) $(CPPFLAGS) -o $@ $<
-
-
-%.o : C:/Users/Asus/Desktop/servosfunc/%.c
-	$(CC) $(CFLAGS) -o $@ $<
-
-
-%.S.o : C:/Users/Asus/Desktop/servosfunc/%.s
-	$(AS) $(ASFLAGS) -o $@ $<
-
-
-%.S.o : C:/Users/Asus/Desktop/servosfunc/%.S
-	$(AS) $(ASFLAGS) -o $@ $<
-
-
-%.o : C:/Users/Asus/Desktop/servosfunc/%.cpp
 	$(CPP) $(CPPFLAGS) -o $@ $<
 
 

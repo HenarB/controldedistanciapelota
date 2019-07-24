@@ -2,7 +2,7 @@ ert_main.o: ert_main.c servosfunc.h rtwtypes.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/sysran_types.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h \
- D:/Descargas/simulink/SFUNC/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
+ C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h \
  C:/PROGRA~1/MATLAB/R2018a/rtw/c/src/dt_info.h \
@@ -33,7 +33,7 @@ C:/PROGRA~1/MATLAB/R2018a/simulink/include/sysran_types.h:
 
 C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_continuous.h:
 
-D:/Descargas/simulink/SFUNC/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
+C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
 
 C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_solver.h:
 
