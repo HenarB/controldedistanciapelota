@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'servosfunc'.
  *
- * Model version                  : 1.55
+ * Model version                  : 1.50
  * Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018
- * C/C++ source code generated on : Wed Jul 24 14:07:41 2019
+ * C/C++ source code generated on : Fri Jul 26 13:41:42 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -21,12 +21,12 @@ P_servosfunc_T servosfunc_P = {
   /* Mask Parameter: DiscretePIDController_D
    * Referenced by: '<S1>/Derivative Gain'
    */
-  25.0,
+  6.0,
 
   /* Mask Parameter: DiscretePIDController_I
    * Referenced by: '<S1>/Integral Gain'
    */
-  -6.0,
+  0.1,
 
   /* Mask Parameter: DiscretePIDController_LowerSatu
    * Referenced by:
@@ -45,7 +45,7 @@ P_servosfunc_T servosfunc_P = {
   /* Mask Parameter: DiscretePIDController_P
    * Referenced by: '<S1>/Proportional Gain'
    */
-  -12.0,
+  3.0,
 
   /* Mask Parameter: DiscretePIDController_UpperSatu
    * Referenced by:
@@ -64,10 +64,10 @@ P_servosfunc_T servosfunc_P = {
    */
   1.0,
 
-  /* Expression: 82.390641362145
+  /* Expression: 90
    * Referenced by: '<Root>/Ángulo deseado'
    */
-  82.390641362145,
+  90.0,
 
   /* Expression: 1
    * Referenced by: '<S5>/Constant'
@@ -113,11 +113,6 @@ P_servosfunc_T servosfunc_P = {
    * Referenced by: '<S1>/Integrator'
    */
   0.0,
-
-  /* Expression: 0.0004
-   * Referenced by: '<Root>/Constant1'
-   */
-  0.0004,
 
   /* Computed Parameter: ManualSwitch_CurrentSetting
    * Referenced by: '<Root>/Manual Switch'

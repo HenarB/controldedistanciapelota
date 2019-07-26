@@ -21,11 +21,11 @@
 <tr name="5" id="5">
 <td><a id="l5" class='ln'>5</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="6" id="6">
-<td><a id="l6" class='ln'>6</a></td><td><span class="ct"> * Model version                  : 1.55</span></td></tr>
+<td><a id="l6" class='ln'>6</a></td><td><span class="ct"> * Model version                  : 1.50</span></td></tr>
 <tr name="7" id="7">
 <td><a id="l7" class='ln'>7</a></td><td><span class="ct"> * Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018</span></td></tr>
 <tr name="8" id="8">
-<td><a id="l8" class='ln'>8</a></td><td><span class="ct"> * C/C++ source code generated on : Wed Jul 24 14:07:41 2019</span></td></tr>
+<td><a id="l8" class='ln'>8</a></td><td><span class="ct"> * C/C++ source code generated on : Fri Jul 26 13:41:42 2019</span></td></tr>
 <tr name="9" id="9">
 <td><a id="l9" class='ln'>9</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="10" id="10">
@@ -183,7 +183,7 @@
 <tr name="86" id="86">
 <td><a id="l86" class='ln'>86</a></td><td>  <a id="86c3" class="tk">real_T</a> <a id="86c10" class="tk">SFunctionBuilder</a>;             <span class="ct">/* '<a class="ct blk" blk_line="86">&lt;S2&gt;/S-Function Builder</a>' */</span></td></tr>
 <tr name="87" id="87">
-<td><a id="l87" class='ln'>87</a></td><td>  <a id="87c3" class="tk">real_T</a> <a id="87c10" class="tk">ModoAutomtico</a>;                <span class="ct">/* '<a class="ct blk" blk_line="87">&lt;Root&gt;/Add</a>' */</span></td></tr>
+<td><a id="l87" class='ln'>87</a></td><td>  <a id="87c3" class="tk">real_T</a> <a id="87c10" class="tk">Saturate</a>;                     <span class="ct">/* '<a class="ct blk" blk_line="87">&lt;S1&gt;/Saturate</a>' */</span></td></tr>
 <tr name="88" id="88">
 <td><a id="l88" class='ln'>88</a></td><td><span class="br">}</span> <a id="88c3" class="tk">B_servosfunc_T</a>;</td></tr>
 <tr name="89" id="89">
@@ -267,7 +267,7 @@
 <tr name="128" id="128">
 <td><a id="l128" class='ln'>128</a></td><td><span class="ct">                                        */</span></td></tr>
 <tr name="129" id="129">
-<td><a id="l129" class='ln'>129</a></td><td>  <a id="129c3" class="tk">real_T</a> <a id="129c10" class="tk">ngulodeseado_Gain</a>;            <span class="ct">/* Expression: 82.390641362145</span></td></tr>
+<td><a id="l129" class='ln'>129</a></td><td>  <a id="129c3" class="tk">real_T</a> <a id="129c10" class="tk">ngulodeseado_Gain</a>;            <span class="ct">/* Expression: 90</span></td></tr>
 <tr name="130" id="130">
 <td><a id="l130" class='ln'>130</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="130">&lt;Root&gt;/Ángulo deseado</a>'</span></td></tr>
 <tr name="131" id="131">
@@ -327,195 +327,189 @@
 <tr name="158" id="158">
 <td><a id="l158" class='ln'>158</a></td><td><span class="ct">                                        */</span></td></tr>
 <tr name="159" id="159">
-<td><a id="l159" class='ln'>159</a></td><td>  <a id="159c3" class="tk">real_T</a> <a id="159c10" class="tk">Constant1_Value</a>;              <span class="ct">/* Expression: 0.0004</span></td></tr>
+<td><a id="l159" class='ln'>159</a></td><td>  <a id="159c3" class="tk">uint8_T</a> <a id="159c11" class="tk">ManualSwitch_CurrentSetting</a>; <span class="ct">/* Computed Parameter: ManualSwitch_CurrentSetting</span></td></tr>
 <tr name="160" id="160">
-<td><a id="l160" class='ln'>160</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="160">&lt;Root&gt;/Constant1</a>'</span></td></tr>
+<td><a id="l160" class='ln'>160</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="160">&lt;Root&gt;/Manual Switch</a>'</span></td></tr>
 <tr name="161" id="161">
 <td><a id="l161" class='ln'>161</a></td><td><span class="ct">                                        */</span></td></tr>
 <tr name="162" id="162">
-<td><a id="l162" class='ln'>162</a></td><td>  <a id="162c3" class="tk">uint8_T</a> <a id="162c11" class="tk">ManualSwitch_CurrentSetting</a>; <span class="ct">/* Computed Parameter: ManualSwitch_CurrentSetting</span></td></tr>
+<td><a id="l162" class='ln'>162</a></td><td>  <a id="162c3" class="tk">uint8_T</a> <a id="162c11" class="tk">ServoWrite_p1</a>;               <span class="ct">/* Computed Parameter: ServoWrite_p1</span></td></tr>
 <tr name="163" id="163">
-<td><a id="l163" class='ln'>163</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="163">&lt;Root&gt;/Manual Switch</a>'</span></td></tr>
+<td><a id="l163" class='ln'>163</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="163">&lt;S3&gt;/Servo Write</a>'</span></td></tr>
 <tr name="164" id="164">
 <td><a id="l164" class='ln'>164</a></td><td><span class="ct">                                        */</span></td></tr>
 <tr name="165" id="165">
-<td><a id="l165" class='ln'>165</a></td><td>  <a id="165c3" class="tk">uint8_T</a> <a id="165c11" class="tk">ServoWrite_p1</a>;               <span class="ct">/* Computed Parameter: ServoWrite_p1</span></td></tr>
+<td><a id="l165" class='ln'>165</a></td><td><span class="br">}</span>;</td></tr>
 <tr name="166" id="166">
-<td><a id="l166" class='ln'>166</a></td><td><span class="ct">                                        * Referenced by: '<a class="ct blk" blk_line="166">&lt;S3&gt;/Servo Write</a>'</span></td></tr>
+<td><a id="l166" class='ln'>166</a></td><td></td></tr>
 <tr name="167" id="167">
-<td><a id="l167" class='ln'>167</a></td><td><span class="ct">                                        */</span></td></tr>
+<td><a id="l167" class='ln'>167</a></td><td><span class="ct">/* Real-time Model Data Structure */</span></td></tr>
 <tr name="168" id="168">
-<td><a id="l168" class='ln'>168</a></td><td><span class="br">}</span>;</td></tr>
+<td><a id="l168" class='ln'>168</a></td><td><span class="kw">struct</span> <a id="168c8" class="tk">tag_RTM_servosfunc_T</a> <span class="br">{</span></td></tr>
 <tr name="169" id="169">
-<td><a id="l169" class='ln'>169</a></td><td></td></tr>
+<td><a id="l169" class='ln'>169</a></td><td>  <span class="kw">const</span> <a id="169c9" class="tk">char_T</a> <a id="169c16" class="tk">*</a><a id="169c17" class="tk">errorStatus</a>;</td></tr>
 <tr name="170" id="170">
-<td><a id="l170" class='ln'>170</a></td><td><span class="ct">/* Real-time Model Data Structure */</span></td></tr>
+<td><a id="l170" class='ln'>170</a></td><td>  <a id="170c3" class="tk">RTWExtModeInfo</a> <a id="170c18" class="tk">*</a><a id="170c19" class="tk">extModeInfo</a>;</td></tr>
 <tr name="171" id="171">
-<td><a id="l171" class='ln'>171</a></td><td><span class="kw">struct</span> <a id="171c8" class="tk">tag_RTM_servosfunc_T</a> <span class="br">{</span></td></tr>
+<td><a id="l171" class='ln'>171</a></td><td></td></tr>
 <tr name="172" id="172">
-<td><a id="l172" class='ln'>172</a></td><td>  <span class="kw">const</span> <a id="172c9" class="tk">char_T</a> <a id="172c16" class="tk">*</a><a id="172c17" class="tk">errorStatus</a>;</td></tr>
+<td><a id="l172" class='ln'>172</a></td><td>  <span class="ct">/*</span></td></tr>
 <tr name="173" id="173">
-<td><a id="l173" class='ln'>173</a></td><td>  <a id="173c3" class="tk">RTWExtModeInfo</a> <a id="173c18" class="tk">*</a><a id="173c19" class="tk">extModeInfo</a>;</td></tr>
+<td><a id="l173" class='ln'>173</a></td><td><span class="ct">   * Sizes:</span></td></tr>
 <tr name="174" id="174">
-<td><a id="l174" class='ln'>174</a></td><td></td></tr>
+<td><a id="l174" class='ln'>174</a></td><td><span class="ct">   * The following substructure contains sizes information</span></td></tr>
 <tr name="175" id="175">
-<td><a id="l175" class='ln'>175</a></td><td>  <span class="ct">/*</span></td></tr>
+<td><a id="l175" class='ln'>175</a></td><td><span class="ct">   * for many of the model attributes such as inputs, outputs,</span></td></tr>
 <tr name="176" id="176">
-<td><a id="l176" class='ln'>176</a></td><td><span class="ct">   * Sizes:</span></td></tr>
+<td><a id="l176" class='ln'>176</a></td><td><span class="ct">   * dwork, sample times, etc.</span></td></tr>
 <tr name="177" id="177">
-<td><a id="l177" class='ln'>177</a></td><td><span class="ct">   * The following substructure contains sizes information</span></td></tr>
+<td><a id="l177" class='ln'>177</a></td><td><span class="ct">   */</span></td></tr>
 <tr name="178" id="178">
-<td><a id="l178" class='ln'>178</a></td><td><span class="ct">   * for many of the model attributes such as inputs, outputs,</span></td></tr>
+<td><a id="l178" class='ln'>178</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
 <tr name="179" id="179">
-<td><a id="l179" class='ln'>179</a></td><td><span class="ct">   * dwork, sample times, etc.</span></td></tr>
+<td><a id="l179" class='ln'>179</a></td><td>    <a id="179c5" class="tk">uint32_T</a> <a id="179c14" class="tk">checksums</a>[4];</td></tr>
 <tr name="180" id="180">
-<td><a id="l180" class='ln'>180</a></td><td><span class="ct">   */</span></td></tr>
+<td><a id="l180" class='ln'>180</a></td><td>  <span class="br">}</span> <a id="180c5" class="tk">Sizes</a>;</td></tr>
 <tr name="181" id="181">
-<td><a id="l181" class='ln'>181</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
+<td><a id="l181" class='ln'>181</a></td><td></td></tr>
 <tr name="182" id="182">
-<td><a id="l182" class='ln'>182</a></td><td>    <a id="182c5" class="tk">uint32_T</a> <a id="182c14" class="tk">checksums</a>[4];</td></tr>
+<td><a id="l182" class='ln'>182</a></td><td>  <span class="ct">/*</span></td></tr>
 <tr name="183" id="183">
-<td><a id="l183" class='ln'>183</a></td><td>  <span class="br">}</span> <a id="183c5" class="tk">Sizes</a>;</td></tr>
+<td><a id="l183" class='ln'>183</a></td><td><span class="ct">   * SpecialInfo:</span></td></tr>
 <tr name="184" id="184">
-<td><a id="l184" class='ln'>184</a></td><td></td></tr>
+<td><a id="l184" class='ln'>184</a></td><td><span class="ct">   * The following substructure contains special information</span></td></tr>
 <tr name="185" id="185">
-<td><a id="l185" class='ln'>185</a></td><td>  <span class="ct">/*</span></td></tr>
+<td><a id="l185" class='ln'>185</a></td><td><span class="ct">   * related to other components that are dependent on RTW.</span></td></tr>
 <tr name="186" id="186">
-<td><a id="l186" class='ln'>186</a></td><td><span class="ct">   * SpecialInfo:</span></td></tr>
+<td><a id="l186" class='ln'>186</a></td><td><span class="ct">   */</span></td></tr>
 <tr name="187" id="187">
-<td><a id="l187" class='ln'>187</a></td><td><span class="ct">   * The following substructure contains special information</span></td></tr>
+<td><a id="l187" class='ln'>187</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
 <tr name="188" id="188">
-<td><a id="l188" class='ln'>188</a></td><td><span class="ct">   * related to other components that are dependent on RTW.</span></td></tr>
+<td><a id="l188" class='ln'>188</a></td><td>    <span class="kw">const</span> <span class="kw">void</span> <a id="188c16" class="tk">*</a><a id="188c17" class="tk">mappingInfo</a>;</td></tr>
 <tr name="189" id="189">
-<td><a id="l189" class='ln'>189</a></td><td><span class="ct">   */</span></td></tr>
+<td><a id="l189" class='ln'>189</a></td><td>  <span class="br">}</span> <a id="189c5" class="tk">SpecialInfo</a>;</td></tr>
 <tr name="190" id="190">
-<td><a id="l190" class='ln'>190</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
+<td><a id="l190" class='ln'>190</a></td><td></td></tr>
 <tr name="191" id="191">
-<td><a id="l191" class='ln'>191</a></td><td>    <span class="kw">const</span> <span class="kw">void</span> <a id="191c16" class="tk">*</a><a id="191c17" class="tk">mappingInfo</a>;</td></tr>
+<td><a id="l191" class='ln'>191</a></td><td>  <span class="ct">/*</span></td></tr>
 <tr name="192" id="192">
-<td><a id="l192" class='ln'>192</a></td><td>  <span class="br">}</span> <a id="192c5" class="tk">SpecialInfo</a>;</td></tr>
+<td><a id="l192" class='ln'>192</a></td><td><span class="ct">   * Timing:</span></td></tr>
 <tr name="193" id="193">
-<td><a id="l193" class='ln'>193</a></td><td></td></tr>
+<td><a id="l193" class='ln'>193</a></td><td><span class="ct">   * The following substructure contains information regarding</span></td></tr>
 <tr name="194" id="194">
-<td><a id="l194" class='ln'>194</a></td><td>  <span class="ct">/*</span></td></tr>
+<td><a id="l194" class='ln'>194</a></td><td><span class="ct">   * the timing information for the model.</span></td></tr>
 <tr name="195" id="195">
-<td><a id="l195" class='ln'>195</a></td><td><span class="ct">   * Timing:</span></td></tr>
+<td><a id="l195" class='ln'>195</a></td><td><span class="ct">   */</span></td></tr>
 <tr name="196" id="196">
-<td><a id="l196" class='ln'>196</a></td><td><span class="ct">   * The following substructure contains information regarding</span></td></tr>
+<td><a id="l196" class='ln'>196</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
 <tr name="197" id="197">
-<td><a id="l197" class='ln'>197</a></td><td><span class="ct">   * the timing information for the model.</span></td></tr>
+<td><a id="l197" class='ln'>197</a></td><td>    <a id="197c5" class="tk">time_T</a> <a id="197c12" class="tk">taskTime0</a>;</td></tr>
 <tr name="198" id="198">
-<td><a id="l198" class='ln'>198</a></td><td><span class="ct">   */</span></td></tr>
+<td><a id="l198" class='ln'>198</a></td><td>    <a id="198c5" class="tk">uint32_T</a> <a id="198c14" class="tk">clockTick0</a>;</td></tr>
 <tr name="199" id="199">
-<td><a id="l199" class='ln'>199</a></td><td>  <span class="kw">struct</span> <span class="br">{</span></td></tr>
+<td><a id="l199" class='ln'>199</a></td><td>    <a id="199c5" class="tk">time_T</a> <a id="199c12" class="tk">stepSize0</a>;</td></tr>
 <tr name="200" id="200">
-<td><a id="l200" class='ln'>200</a></td><td>    <a id="200c5" class="tk">time_T</a> <a id="200c12" class="tk">taskTime0</a>;</td></tr>
+<td><a id="l200" class='ln'>200</a></td><td>    <a id="200c5" class="tk">time_T</a> <a id="200c12" class="tk">tFinal</a>;</td></tr>
 <tr name="201" id="201">
-<td><a id="l201" class='ln'>201</a></td><td>    <a id="201c5" class="tk">uint32_T</a> <a id="201c14" class="tk">clockTick0</a>;</td></tr>
+<td><a id="l201" class='ln'>201</a></td><td>    <a id="201c5" class="tk">boolean_T</a> <a id="201c15" class="tk">stopRequestedFlag</a>;</td></tr>
 <tr name="202" id="202">
-<td><a id="l202" class='ln'>202</a></td><td>    <a id="202c5" class="tk">time_T</a> <a id="202c12" class="tk">stepSize0</a>;</td></tr>
+<td><a id="l202" class='ln'>202</a></td><td>  <span class="br">}</span> <a id="202c5" class="tk">Timing</a>;</td></tr>
 <tr name="203" id="203">
-<td><a id="l203" class='ln'>203</a></td><td>    <a id="203c5" class="tk">time_T</a> <a id="203c12" class="tk">tFinal</a>;</td></tr>
+<td><a id="l203" class='ln'>203</a></td><td><span class="br">}</span>;</td></tr>
 <tr name="204" id="204">
-<td><a id="l204" class='ln'>204</a></td><td>    <a id="204c5" class="tk">boolean_T</a> <a id="204c15" class="tk">stopRequestedFlag</a>;</td></tr>
+<td><a id="l204" class='ln'>204</a></td><td></td></tr>
 <tr name="205" id="205">
-<td><a id="l205" class='ln'>205</a></td><td>  <span class="br">}</span> <a id="205c5" class="tk">Timing</a>;</td></tr>
+<td><a id="l205" class='ln'>205</a></td><td><span class="ct">/* Block parameters (default storage) */</span></td></tr>
 <tr name="206" id="206">
-<td><a id="l206" class='ln'>206</a></td><td><span class="br">}</span>;</td></tr>
+<td><a id="l206" class='ln'>206</a></td><td><span class="kw">extern</span> <a id="206c8" class="tk">P_servosfunc_T</a> <a id="206c23" class="tk">servosfunc_P</a>;</td></tr>
 <tr name="207" id="207">
 <td><a id="l207" class='ln'>207</a></td><td></td></tr>
 <tr name="208" id="208">
-<td><a id="l208" class='ln'>208</a></td><td><span class="ct">/* Block parameters (default storage) */</span></td></tr>
+<td><a id="l208" class='ln'>208</a></td><td><span class="ct">/* Block signals (default storage) */</span></td></tr>
 <tr name="209" id="209">
-<td><a id="l209" class='ln'>209</a></td><td><span class="kw">extern</span> <a id="209c8" class="tk">P_servosfunc_T</a> <a id="209c23" class="tk">servosfunc_P</a>;</td></tr>
+<td><a id="l209" class='ln'>209</a></td><td><span class="kw">extern</span> <a id="209c8" class="tk">B_servosfunc_T</a> <a id="209c23" class="tk">servosfunc_B</a>;</td></tr>
 <tr name="210" id="210">
 <td><a id="l210" class='ln'>210</a></td><td></td></tr>
 <tr name="211" id="211">
-<td><a id="l211" class='ln'>211</a></td><td><span class="ct">/* Block signals (default storage) */</span></td></tr>
+<td><a id="l211" class='ln'>211</a></td><td><span class="ct">/* Block states (default storage) */</span></td></tr>
 <tr name="212" id="212">
-<td><a id="l212" class='ln'>212</a></td><td><span class="kw">extern</span> <a id="212c8" class="tk">B_servosfunc_T</a> <a id="212c23" class="tk">servosfunc_B</a>;</td></tr>
+<td><a id="l212" class='ln'>212</a></td><td><span class="kw">extern</span> <a id="212c8" class="tk">DW_servosfunc_T</a> <a id="212c24" class="tk">servosfunc_DW</a>;</td></tr>
 <tr name="213" id="213">
 <td><a id="l213" class='ln'>213</a></td><td></td></tr>
 <tr name="214" id="214">
-<td><a id="l214" class='ln'>214</a></td><td><span class="ct">/* Block states (default storage) */</span></td></tr>
+<td><a id="l214" class='ln'>214</a></td><td><span class="ct">/* Model entry point functions */</span></td></tr>
 <tr name="215" id="215">
-<td><a id="l215" class='ln'>215</a></td><td><span class="kw">extern</span> <a id="215c8" class="tk">DW_servosfunc_T</a> <a id="215c24" class="tk">servosfunc_DW</a>;</td></tr>
+<td><a id="l215" class='ln'>215</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="215c13" class="tk">servosfunc_initialize</a>(<span class="kw">void</span>);</td></tr>
 <tr name="216" id="216">
-<td><a id="l216" class='ln'>216</a></td><td></td></tr>
+<td><a id="l216" class='ln'>216</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="216c13" class="tk">servosfunc_step</a>(<span class="kw">void</span>);</td></tr>
 <tr name="217" id="217">
-<td><a id="l217" class='ln'>217</a></td><td><span class="ct">/* Model entry point functions */</span></td></tr>
+<td><a id="l217" class='ln'>217</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="217c13" class="tk">servosfunc_terminate</a>(<span class="kw">void</span>);</td></tr>
 <tr name="218" id="218">
-<td><a id="l218" class='ln'>218</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="218c13" class="tk">servosfunc_initialize</a>(<span class="kw">void</span>);</td></tr>
+<td><a id="l218" class='ln'>218</a></td><td></td></tr>
 <tr name="219" id="219">
-<td><a id="l219" class='ln'>219</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="219c13" class="tk">servosfunc_step</a>(<span class="kw">void</span>);</td></tr>
+<td><a id="l219" class='ln'>219</a></td><td><span class="ct">/* Real-time Model object */</span></td></tr>
 <tr name="220" id="220">
-<td><a id="l220" class='ln'>220</a></td><td><span class="kw">extern</span> <span class="kw">void</span> <a id="220c13" class="tk">servosfunc_terminate</a>(<span class="kw">void</span>);</td></tr>
+<td><a id="l220" class='ln'>220</a></td><td><span class="kw">extern</span> <a id="220c8" class="tk">RT_MODEL_servosfunc_T</a> <a id="220c30" class="tk">*</a><span class="kw">const</span> <a id="220c37" class="tk">servosfunc_M</a>;</td></tr>
 <tr name="221" id="221">
 <td><a id="l221" class='ln'>221</a></td><td></td></tr>
 <tr name="222" id="222">
-<td><a id="l222" class='ln'>222</a></td><td><span class="ct">/* Real-time Model object */</span></td></tr>
+<td><a id="l222" class='ln'>222</a></td><td><span class="ct">/*-</span></td></tr>
 <tr name="223" id="223">
-<td><a id="l223" class='ln'>223</a></td><td><span class="kw">extern</span> <a id="223c8" class="tk">RT_MODEL_servosfunc_T</a> <a id="223c30" class="tk">*</a><span class="kw">const</span> <a id="223c37" class="tk">servosfunc_M</a>;</td></tr>
+<td><a id="l223" class='ln'>223</a></td><td><span class="ct"> * The generated code includes comments that allow you to trace directly</span></td></tr>
 <tr name="224" id="224">
-<td><a id="l224" class='ln'>224</a></td><td></td></tr>
+<td><a id="l224" class='ln'>224</a></td><td><span class="ct"> * back to the appropriate location in the model.  The basic format</span></td></tr>
 <tr name="225" id="225">
-<td><a id="l225" class='ln'>225</a></td><td><span class="ct">/*-</span></td></tr>
+<td><a id="l225" class='ln'>225</a></td><td><span class="ct"> * is &lt;system&gt;/block_name, where system is the system number (uniquely</span></td></tr>
 <tr name="226" id="226">
-<td><a id="l226" class='ln'>226</a></td><td><span class="ct"> * The generated code includes comments that allow you to trace directly</span></td></tr>
+<td><a id="l226" class='ln'>226</a></td><td><span class="ct"> * assigned by Simulink) and block_name is the name of the block.</span></td></tr>
 <tr name="227" id="227">
-<td><a id="l227" class='ln'>227</a></td><td><span class="ct"> * back to the appropriate location in the model.  The basic format</span></td></tr>
+<td><a id="l227" class='ln'>227</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="228" id="228">
-<td><a id="l228" class='ln'>228</a></td><td><span class="ct"> * is &lt;system&gt;/block_name, where system is the system number (uniquely</span></td></tr>
+<td><a id="l228" class='ln'>228</a></td><td><span class="ct"> * Use the MATLAB hilite_system command to trace the generated code back</span></td></tr>
 <tr name="229" id="229">
-<td><a id="l229" class='ln'>229</a></td><td><span class="ct"> * assigned by Simulink) and block_name is the name of the block.</span></td></tr>
+<td><a id="l229" class='ln'>229</a></td><td><span class="ct"> * to the model.  For example,</span></td></tr>
 <tr name="230" id="230">
 <td><a id="l230" class='ln'>230</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="231" id="231">
-<td><a id="l231" class='ln'>231</a></td><td><span class="ct"> * Use the MATLAB hilite_system command to trace the generated code back</span></td></tr>
+<td><a id="l231" class='ln'>231</a></td><td><span class="ct"> * hilite_system('<a class="ct blk" blk_line="231">&lt;S3&gt;</a>')    - opens system 3</span></td></tr>
 <tr name="232" id="232">
-<td><a id="l232" class='ln'>232</a></td><td><span class="ct"> * to the model.  For example,</span></td></tr>
+<td><a id="l232" class='ln'>232</a></td><td><span class="ct"> * hilite_system('<a class="ct blk" blk_line="232">&lt;S3&gt;/Kp</a>') - opens and selects block Kp which resides in S3</span></td></tr>
 <tr name="233" id="233">
 <td><a id="l233" class='ln'>233</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="234" id="234">
-<td><a id="l234" class='ln'>234</a></td><td><span class="ct"> * hilite_system('<a class="ct blk" blk_line="234">&lt;S3&gt;</a>')    - opens system 3</span></td></tr>
+<td><a id="l234" class='ln'>234</a></td><td><span class="ct"> * Here is the system hierarchy for this model</span></td></tr>
 <tr name="235" id="235">
-<td><a id="l235" class='ln'>235</a></td><td><span class="ct"> * hilite_system('<a class="ct blk" blk_line="235">&lt;S3&gt;/Kp</a>') - opens and selects block Kp which resides in S3</span></td></tr>
+<td><a id="l235" class='ln'>235</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="236" id="236">
-<td><a id="l236" class='ln'>236</a></td><td><span class="ct"> *</span></td></tr>
+<td><a id="l236" class='ln'>236</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="236">&lt;Root&gt;</a>' : 'servosfunc'</span></td></tr>
 <tr name="237" id="237">
-<td><a id="l237" class='ln'>237</a></td><td><span class="ct"> * Here is the system hierarchy for this model</span></td></tr>
+<td><a id="l237" class='ln'>237</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="237">&lt;S1&gt;</a>'   : 'servosfunc/Discrete PID Controller'</span></td></tr>
 <tr name="238" id="238">
-<td><a id="l238" class='ln'>238</a></td><td><span class="ct"> *</span></td></tr>
+<td><a id="l238" class='ln'>238</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="238">&lt;S2&gt;</a>'   : 'servosfunc/S-function builder'</span></td></tr>
 <tr name="239" id="239">
-<td><a id="l239" class='ln'>239</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="239">&lt;Root&gt;</a>' : 'servosfunc'</span></td></tr>
+<td><a id="l239" class='ln'>239</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="239">&lt;S3&gt;</a>'   : 'servosfunc/Standard Servo Write'</span></td></tr>
 <tr name="240" id="240">
-<td><a id="l240" class='ln'>240</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="240">&lt;S1&gt;</a>'   : 'servosfunc/Discrete PID Controller'</span></td></tr>
+<td><a id="l240" class='ln'>240</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="240">&lt;S4&gt;</a>'   : 'servosfunc/Discrete PID Controller/Clamping circuit'</span></td></tr>
 <tr name="241" id="241">
-<td><a id="l241" class='ln'>241</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="241">&lt;S2&gt;</a>'   : 'servosfunc/S-function builder'</span></td></tr>
+<td><a id="l241" class='ln'>241</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="241">&lt;S5&gt;</a>'   : 'servosfunc/Discrete PID Controller/Filter Differentiator'</span></td></tr>
 <tr name="242" id="242">
-<td><a id="l242" class='ln'>242</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="242">&lt;S3&gt;</a>'   : 'servosfunc/Standard Servo Write'</span></td></tr>
+<td><a id="l242" class='ln'>242</a></td><td><span class="ct"> */</span></td></tr>
 <tr name="243" id="243">
-<td><a id="l243" class='ln'>243</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="243">&lt;S4&gt;</a>'   : 'servosfunc/Discrete PID Controller/Clamping circuit'</span></td></tr>
+<td><a id="l243" class='ln'>243</a></td><td><span class="pp">#endif</span>                                 <span class="ct">/* RTW_HEADER_servosfunc_h_ */</span></td></tr>
 <tr name="244" id="244">
-<td><a id="l244" class='ln'>244</a></td><td><span class="ct"> * '<a class="ct blk" blk_line="244">&lt;S5&gt;</a>'   : 'servosfunc/Discrete PID Controller/Filter Differentiator'</span></td></tr>
+<td><a id="l244" class='ln'>244</a></td><td></td></tr>
 <tr name="245" id="245">
-<td><a id="l245" class='ln'>245</a></td><td><span class="ct"> */</span></td></tr>
+<td><a id="l245" class='ln'>245</a></td><td><span class="ct">/*</span></td></tr>
 <tr name="246" id="246">
-<td><a id="l246" class='ln'>246</a></td><td><span class="pp">#endif</span>                                 <span class="ct">/* RTW_HEADER_servosfunc_h_ */</span></td></tr>
+<td><a id="l246" class='ln'>246</a></td><td><span class="ct"> * File trailer for generated code.</span></td></tr>
 <tr name="247" id="247">
-<td><a id="l247" class='ln'>247</a></td><td></td></tr>
+<td><a id="l247" class='ln'>247</a></td><td><span class="ct"> *</span></td></tr>
 <tr name="248" id="248">
-<td><a id="l248" class='ln'>248</a></td><td><span class="ct">/*</span></td></tr>
+<td><a id="l248" class='ln'>248</a></td><td><span class="ct"> * [EOF]</span></td></tr>
 <tr name="249" id="249">
-<td><a id="l249" class='ln'>249</a></td><td><span class="ct"> * File trailer for generated code.</span></td></tr>
+<td><a id="l249" class='ln'>249</a></td><td><span class="ct"> */</span></td></tr>
 <tr name="250" id="250">
-<td><a id="l250" class='ln'>250</a></td><td><span class="ct"> *</span></td></tr>
-<tr name="251" id="251">
-<td><a id="l251" class='ln'>251</a></td><td><span class="ct"> * [EOF]</span></td></tr>
-<tr name="252" id="252">
-<td><a id="l252" class='ln'>252</a></td><td><span class="ct"> */</span></td></tr>
-<tr name="253" id="253">
-<td><a id="l253" class='ln'>253</a></td><td></td></tr>
+<td><a id="l250" class='ln'>250</a></td><td></td></tr>
 </table>
 </pre>
 </body>

@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'servosfunc'.
  *
- * Model version                  : 1.55
+ * Model version                  : 1.50
  * Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018
- * C/C++ source code generated on : Wed Jul 24 14:07:41 2019
+ * C/C++ source code generated on : Fri Jul 26 13:41:42 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR

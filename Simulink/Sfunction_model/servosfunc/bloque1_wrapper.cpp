@@ -3,7 +3,12 @@
  * Include Files
  *
  */
-#include "simstruc.h"
+#if defined(MATLAB_MEX_FILE)
+#include "tmwtypes.h"
+#include "simstruc_types.h"
+#else
+#include "rtwtypes.h"
+#endif
 
 
 
@@ -44,17 +49,23 @@ extern long map(long x, long in_min, long in_max, long out_min, long out_max)
  *
  */
 extern "C" void bloque1_Outputs_wrapper(real_T *dist1,
-			const real_T *xD,
-			SimStruct *S)
+			const real_T *xD)
 {
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_BEGIN --- EDIT HERE TO _END */
+/* This sample sets the output equal to the input
+      y0[0] = u0[0]; 
+ For complex signals use: y0[0].re = u0[0].re; 
+      y0[0].im = u0[0].im;
+      y1[0].re = u1[0].re;
+      y1[0].im = u1[0].im;
+*/
 //Emular loop en el estado 1
 
 if (xD[0] == 1){
      
     #ifndef MATLAB_MEX_FILE
     
-    // ************ Procesar señal del Sensor de Distancia ************
+    // ************** Procesar señal del Sensor de Distancia **************
           
       
       sample_array_sum -= sample_array[0];
@@ -83,14 +94,18 @@ if (xD[0] == 1){
                + 330.80 * pow(estimated_voltage, 2) 
                - 272.10 * estimated_voltage 
                + 120.72;
-      
-      //Limitador de distancia
-      if (dist < 7){
-        dist = 7;
-      }
-      dist1[0] = dist;
+        
+       // filtro pasa bajo
+       /*
+       float alpha = 0.5;
+       float previous_dist = 0;
+       float input = (alpha * dist) + (1-alpha) * previous_dist;
+       previous_dist = dist;
+       */      
+       dist1[0] = dist;
     
     #endif
+
 }
 /* %%%-SFUNWIZ_wrapper_Outputs_Changes_END --- EDIT HERE TO _BEGIN */
 }
@@ -100,8 +115,7 @@ if (xD[0] == 1){
  *
  */
 extern "C" void bloque1_Update_wrapper(real_T *dist1,
-			real_T *xD,
-			SimStruct *S)
+			real_T *xD)
 {
 /* %%%-SFUNWIZ_wrapper_Update_Changes_BEGIN --- EDIT HERE TO _END */
 /*

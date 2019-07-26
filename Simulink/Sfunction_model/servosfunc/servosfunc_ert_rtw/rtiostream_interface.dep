@@ -1,7 +1,7 @@
 rtiostream_interface.o: \
  C:/PROGRA~1/MATLAB/R2018a/rtw/c/src/ext_mode/common/rtiostream_interface.c \
  C:/PROGRA~1/MATLAB/R2018a/rtw/c/src/ext_mode/common/updown_util.h \
- C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
+ D:/Descargas/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h \
  C:/PROGRA~1/MATLAB/R2018a/rtw/c/src/rtiostream.h \
  C:/PROGRA~1/MATLAB/R2018a/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h \
@@ -10,7 +10,7 @@ rtiostream_interface.o: \
 
 C:/PROGRA~1/MATLAB/R2018a/rtw/c/src/ext_mode/common/updown_util.h:
 
-C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
+D:/Descargas/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
 
 C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h:
 

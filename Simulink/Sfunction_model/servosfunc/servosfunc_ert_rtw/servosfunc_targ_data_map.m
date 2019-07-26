@@ -70,8 +70,8 @@
       paramMap.sections(2) = section;
       clear section
       
-      section.nData     = 12;
-      section.data(12)  = dumData; %prealloc
+      section.nData     = 11;
+      section.data(11)  = dumData; %prealloc
       
 	  ;% servosfunc_P.Constant_Value
 	  section.data(1).logicalSrcIdx = 7;
@@ -117,10 +117,6 @@
 	  section.data(11).logicalSrcIdx = 17;
 	  section.data(11).dtTransOffset = 11;
 	
-	  ;% servosfunc_P.Constant1_Value
-	  section.data(12).logicalSrcIdx = 18;
-	  section.data(12).dtTransOffset = 12;
-	
       nTotData = nTotData + section.nData;
       paramMap.sections(3) = section;
       clear section
@@ -129,11 +125,11 @@
       section.data(2)  = dumData; %prealloc
       
 	  ;% servosfunc_P.ManualSwitch_CurrentSetting
-	  section.data(1).logicalSrcIdx = 19;
+	  section.data(1).logicalSrcIdx = 18;
 	  section.data(1).dtTransOffset = 0;
 	
 	  ;% servosfunc_P.ServoWrite_p1
-	  section.data(2).logicalSrcIdx = 20;
+	  section.data(2).logicalSrcIdx = 19;
 	  section.data(2).dtTransOffset = 1;
 	
       nTotData = nTotData + section.nData;
@@ -188,7 +184,7 @@
 	  section.data(1).logicalSrcIdx = 1;
 	  section.data(1).dtTransOffset = 0;
 	
-	  ;% servosfunc_B.ModoAutomtico
+	  ;% servosfunc_B.Saturate
 	  section.data(2).logicalSrcIdx = 3;
 	  section.data(2).dtTransOffset = 1;
 	
@@ -282,8 +278,8 @@
   ;%
 
 
-  targMap.checksum0 = 3425433701;
-  targMap.checksum1 = 1839177682;
-  targMap.checksum2 = 3702524634;
-  targMap.checksum3 = 1386009927;
+  targMap.checksum0 = 3638136472;
+  targMap.checksum1 = 1381186947;
+  targMap.checksum2 = 3408073909;
+  targMap.checksum3 = 2544427265;
 

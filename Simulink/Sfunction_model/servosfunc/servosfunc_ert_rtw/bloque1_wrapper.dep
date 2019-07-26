@@ -2,7 +2,7 @@ bloque1_wrapper.o: ../bloque1_wrapper.c \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_compcond.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_types.h \
- C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
+ D:/Descargas/servosfunc/servosfunc_ert_rtw/rtwtypes.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_types_def.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_matlogging.h \
  C:/PROGRA~1/MATLAB/R2018a/simulink/include/rtw_extmode.h \
@@ -32,7 +32,7 @@ C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_compcond.h:
 
 C:/PROGRA~1/MATLAB/R2018a/simulink/include/simstruc_types.h:
 
-C:/Users/henar/Desktop/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
+D:/Descargas/servosfunc/servosfunc_ert_rtw/rtwtypes.h:
 
 C:/PROGRA~1/MATLAB/R2018a/simulink/include/sl_types_def.h:
 

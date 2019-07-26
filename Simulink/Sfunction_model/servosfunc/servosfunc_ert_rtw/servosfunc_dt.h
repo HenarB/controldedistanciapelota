@@ -3,9 +3,9 @@
  *
  * Code generation for model "servosfunc".
  *
- * Model version              : 1.55
+ * Model version              : 1.50
  * Simulink Coder version : 8.14 (R2018a) 06-Feb-2018
- * C source code generated on : Wed Jul 24 14:07:41 2019
+ * C source code generated on : Fri Jul 26 13:41:42 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -71,7 +71,7 @@ static DataTypeTransition rtPTransitions[] = {
 
   { (char_T *)(&servosfunc_P.ServoWrite_pinNumber), 7, 0, 1 },
 
-  { (char_T *)(&servosfunc_P.Constant_Value), 0, 0, 13 },
+  { (char_T *)(&servosfunc_P.Constant_Value), 0, 0, 12 },
 
   { (char_T *)(&servosfunc_P.ManualSwitch_CurrentSetting), 3, 0, 2 }
 };

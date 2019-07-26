@@ -13,14 +13,10 @@ function RTW_rtwnameSIDMap() {
 	this.sidHashMap["servosfunc:19:1708"] = {rtwname: "<S4>"};
 	this.rtwnameHashMap["<S5>"] = {sid: "servosfunc:19:1692"};
 	this.sidHashMap["servosfunc:19:1692"] = {rtwname: "<S5>"};
-	this.rtwnameHashMap["<Root>/Add"] = {sid: "servosfunc:68"};
-	this.sidHashMap["servosfunc:68"] = {rtwname: "<Root>/Add"};
 	this.rtwnameHashMap["<Root>/Consigna"] = {sid: "servosfunc:21"};
 	this.sidHashMap["servosfunc:21"] = {rtwname: "<Root>/Consigna"};
 	this.rtwnameHashMap["<Root>/Constant"] = {sid: "servosfunc:62"};
 	this.sidHashMap["servosfunc:62"] = {rtwname: "<Root>/Constant"};
-	this.rtwnameHashMap["<Root>/Constant1"] = {sid: "servosfunc:69"};
-	this.sidHashMap["servosfunc:69"] = {rtwname: "<Root>/Constant1"};
 	this.rtwnameHashMap["<Root>/DISTANCIA MEDIDA"] = {sid: "servosfunc:2"};
 	this.sidHashMap["servosfunc:2"] = {rtwname: "<Root>/DISTANCIA MEDIDA"};
 	this.rtwnameHashMap["<Root>/Discrete PID Controller"] = {sid: "servosfunc:19"};

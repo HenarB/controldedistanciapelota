@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'servosfunc'.
  *
- * Model version                  : 1.55
+ * Model version                  : 1.50
  * Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018
- * C/C++ source code generated on : Wed Jul 24 14:07:41 2019
+ * C/C++ source code generated on : Fri Jul 26 13:41:42 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -84,7 +84,7 @@
 /* Block signals (default storage) */
 typedef struct {
   real_T SFunctionBuilder;             /* '<S2>/S-Function Builder' */
-  real_T ModoAutomtico;                /* '<Root>/Add' */
+  real_T Saturate;                     /* '<S1>/Saturate' */
 } B_servosfunc_T;
 
 /* Block states (default storage) for system '<Root>' */
@@ -126,7 +126,7 @@ struct P_servosfunc_T_ {
   real_T Constant_Value;               /* Expression: 1
                                         * Referenced by: '<Root>/Constant'
                                         */
-  real_T ngulodeseado_Gain;            /* Expression: 82.390641362145
+  real_T ngulodeseado_Gain;            /* Expression: 90
                                         * Referenced by: '<Root>/Ángulo deseado'
                                         */
   real_T Constant_Value_p;             /* Expression: 1
@@ -155,9 +155,6 @@ struct P_servosfunc_T_ {
                                         */
   real_T Integrator_IC;                /* Expression: InitialConditionForIntegrator
                                         * Referenced by: '<S1>/Integrator'
-                                        */
-  real_T Constant1_Value;              /* Expression: 0.0004
-                                        * Referenced by: '<Root>/Constant1'
                                         */
   uint8_T ManualSwitch_CurrentSetting; /* Computed Parameter: ManualSwitch_CurrentSetting
                                         * Referenced by: '<Root>/Manual Switch'

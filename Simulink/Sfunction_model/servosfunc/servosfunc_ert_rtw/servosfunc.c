@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'servosfunc'.
  *
- * Model version                  : 1.55
+ * Model version                  : 1.50
  * Simulink Coder version         : 8.14 (R2018a) 06-Feb-2018
- * C/C++ source code generated on : Wed Jul 24 14:07:41 2019
+ * C/C++ source code generated on : Fri Jul 26 13:41:42 2019
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -31,7 +31,6 @@ RT_MODEL_servosfunc_T *const servosfunc_M = &servosfunc_M_;
 void servosfunc_step(void)
 {
   real_T rtb_IntegralGain;
-  real_T rtb_Saturate;
   real_T rtb_FilterCoefficient;
   real_T rtb_ManualSwitch;
   real_T rtb_ZeroGain;
@@ -56,7 +55,8 @@ void servosfunc_step(void)
    * About '<S5>/Reciprocal':
    *  Operator: reciprocal
    */
-  rtb_Saturate = 1.0 / (servosfunc_P.Constant_Value_p + rtb_IntegralGain);
+  servosfunc_B.Saturate = 1.0 / (servosfunc_P.Constant_Value_p +
+    rtb_IntegralGain);
 
   /* SignalConversion: '<S5>/TmpSignal ConversionAtFilter Differentiator TFInport2' incorporates:
    *  Constant: '<S5>/Constant'
@@ -64,7 +64,7 @@ void servosfunc_step(void)
    *  Sum: '<S5>/SumNum'
    */
   TmpSignalConversionAtFilterDiff = (rtb_IntegralGain -
-    servosfunc_P.Constant_Value_p) * rtb_Saturate;
+    servosfunc_P.Constant_Value_p) * servosfunc_B.Saturate;
 
   /* S-Function (bloque1): '<S2>/S-Function Builder' */
   bloque1_Outputs_wrapper(&servosfunc_B.SFunctionBuilder,
@@ -89,17 +89,18 @@ void servosfunc_step(void)
   rtb_FilterCoefficient = (servosfunc_P.FilterDifferentiatorTF_NumCoef[0] *
     TmpSignalConversionAtFilterDiff +
     servosfunc_P.FilterDifferentiatorTF_NumCoef[1L] *
-    servosfunc_DW.FilterDifferentiatorTF_states) * rtb_Saturate *
+    servosfunc_DW.FilterDifferentiatorTF_states) * servosfunc_B.Saturate *
     servosfunc_P.DiscretePIDController_N;
 
   /* Gain: '<S1>/Proportional Gain' */
-  rtb_Saturate = servosfunc_P.DiscretePIDController_P * rtb_IntegralGain;
+  servosfunc_B.Saturate = servosfunc_P.DiscretePIDController_P *
+    rtb_IntegralGain;
 
   /* Gain: '<S1>/Integral Gain' */
   rtb_IntegralGain *= servosfunc_P.DiscretePIDController_I;
 
   /* Sum: '<S1>/Sum Fdbk' */
-  rtb_ManualSwitch = (rtb_Saturate + servosfunc_DW.Integrator_DSTATE) +
+  rtb_ManualSwitch = (servosfunc_B.Saturate + servosfunc_DW.Integrator_DSTATE) +
     rtb_FilterCoefficient;
 
   /* Gain: '<S4>/ZeroGain' */
@@ -184,30 +185,26 @@ void servosfunc_step(void)
   rtb_ZeroGain = rtb_IntegralGain + servosfunc_DW.Integrator_DSTATE;
 
   /* Sum: '<S1>/Sum' */
-  rtb_Saturate = (rtb_Saturate + rtb_ZeroGain) + rtb_FilterCoefficient;
+  servosfunc_B.Saturate = (servosfunc_B.Saturate + rtb_ZeroGain) +
+    rtb_FilterCoefficient;
 
   /* Saturate: '<S1>/Saturate' */
-  if (rtb_Saturate > servosfunc_P.DiscretePIDController_UpperSatu) {
-    rtb_Saturate = servosfunc_P.DiscretePIDController_UpperSatu;
+  if (servosfunc_B.Saturate > servosfunc_P.DiscretePIDController_UpperSatu) {
+    servosfunc_B.Saturate = servosfunc_P.DiscretePIDController_UpperSatu;
   } else {
-    if (rtb_Saturate < servosfunc_P.DiscretePIDController_LowerSatu) {
-      rtb_Saturate = servosfunc_P.DiscretePIDController_LowerSatu;
+    if (servosfunc_B.Saturate < servosfunc_P.DiscretePIDController_LowerSatu) {
+      servosfunc_B.Saturate = servosfunc_P.DiscretePIDController_LowerSatu;
     }
   }
 
   /* End of Saturate: '<S1>/Saturate' */
-
-  /* Sum: '<Root>/Add' incorporates:
-   *  Constant: '<Root>/Constant1'
-   */
-  servosfunc_B.ModoAutomtico = rtb_Saturate + servosfunc_P.Constant1_Value;
 
   /* ManualSwitch: '<Root>/Manual Switch' incorporates:
    *  Constant: '<Root>/Constant'
    *  Gain: '<Root>/Ángulo deseado'
    */
   if (servosfunc_P.ManualSwitch_CurrentSetting == 1) {
-    rtb_ManualSwitch = servosfunc_B.ModoAutomtico;
+    rtb_ManualSwitch = servosfunc_B.Saturate;
   } else {
     rtb_ManualSwitch = servosfunc_P.ngulodeseado_Gain *
       servosfunc_P.Constant_Value;
@@ -288,10 +285,10 @@ void servosfunc_initialize(void)
   servosfunc_M->Timing.stepSize0 = 0.06;
 
   /* External mode info */
-  servosfunc_M->Sizes.checksums[0] = (3425433701U);
-  servosfunc_M->Sizes.checksums[1] = (1839177682U);
-  servosfunc_M->Sizes.checksums[2] = (3702524634U);
-  servosfunc_M->Sizes.checksums[3] = (1386009927U);
+  servosfunc_M->Sizes.checksums[0] = (3638136472U);
+  servosfunc_M->Sizes.checksums[1] = (1381186947U);
+  servosfunc_M->Sizes.checksums[2] = (3408073909U);
+  servosfunc_M->Sizes.checksums[3] = (2544427265U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
